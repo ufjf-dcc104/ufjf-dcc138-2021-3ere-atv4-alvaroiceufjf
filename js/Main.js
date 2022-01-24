@@ -7,6 +7,7 @@ const assets = new AssetManager();
 assets.carregaImagem("cavaleiro","assets/knight.png");
 assets.carregaImagem("esqueleto","assets/skelly.png");
 assets.carregaImagem("orc","assets/orc.png");
+assets.carregaAudio("batida","assets/batida.wav");
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
