@@ -7,7 +7,7 @@ export default class AssetManager{
 
     carregaImagem(chave,source){
         const img1 = new Image();
-        img1.addEventListener("load",function(){
+        img1.addEventListener("load",()=>{
             console.log(`Imagem ${this.carregadas}/${this.aCarregar} carregada!`);
             this.carregadas++;
         });

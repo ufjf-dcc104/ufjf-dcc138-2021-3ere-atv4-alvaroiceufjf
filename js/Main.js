@@ -2,14 +2,11 @@ import AssetManager from "./AssetManager.js";
 import Cena from "./Cena.js"; 
 import Sprite from "./Sprite.js";
 
+const assets = new AssetManager();
+
 assets.carregaImagem("cavaleiro","assets/knight.png");
 assets.carregaImagem("esqueleto","assets/skelly.png");
 assets.carregaImagem("orc","assets/orc.png");
-document.body.appendChild(assets.img("cavaleiro"));
-document.body.appendChild(assets.img("esqueleto"));
-document.body.appendChild(assets.img("orc"));
-
-const assets = new AssetManager();
 
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
